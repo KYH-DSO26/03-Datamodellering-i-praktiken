@@ -1,23 +1,6 @@
--- =========================================================================
--- FAILSAFE IT - TOTALT FACIT-SKRIPT: LEKTION 3
--- Innehåller: Block 1 (Steg-för-steg Legacy-städning + Verifierings-JOIN) & Block 2-4 (Greenfield M:M)
--- Namnstandard: PK heter alltid Id. FK heter <Tabellnamn>Id.
--- =========================================================================
+-- Kod från lektion 3
 
--- =========================================================================
--- INITIALISERING (Rensar och förbereder databasen för lektionen)
--- =========================================================================
-USE master;
-GO
-
-IF EXISTS (SELECT * FROM sys.databases WHERE name = 'FailSafe_Lektion3')
-    DROP DATABASE FailSafe_Lektion3;
-GO
-
-CREATE DATABASE FailSafe_Lektion3;
-GO
-
-USE FailSafe_Lektion3;
+USE FailSafeIT;
 GO
 
 -- =========================================================================
